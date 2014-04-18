@@ -22,7 +22,7 @@ function wc_faq_shortcode( $atts ) {
 	return "
 	<div>
 		<div class='faq-button'>{$q}</div>
-		<div class='faq-moreinfo' style=/"display:none;/">{$a}</div>
+		<div class='faq-moreinfo' style=\"display:none;\">{$a}</div>
 	</div>";
 };
 
