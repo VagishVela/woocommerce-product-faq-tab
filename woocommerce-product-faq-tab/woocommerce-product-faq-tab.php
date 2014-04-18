@@ -1,12 +1,28 @@
 <?php
 /**
- * Plugin Name: FAQ Tab in WooCommerce Single Product Page
- * Plugin URI: http://www.velaseo.com
- * Description: Creates FAQ tab in the WooCommerce single product pages
- * Version: 0.1
- * Author: Vagish Vela
- * Author URI: http://www.vagish.com
- * License: GPL2
+ * The WordPress Plugin Boilerplate.
+ *
+ * A foundation off of which to build well-documented WordPress plugins that
+ * also follow WordPress Coding Standards and PHP best practices.
+ *
+ * @package   WooCommerce_Product_FAQ_Tab
+ * @author    Vagish Vela <web@vagish.com>
+ * @license   GPL-2.0+
+ * @link      http://vagish.com
+ * @copyright 2014 Vagish Vela
+ *
+ * @wordpress-plugin
+ * Plugin Name:       WooCommerce Product FAQ Tab
+ * Plugin URI:        http://www.velaseo.com
+ * Description:       Creates FAQ tab in the WooCommerce single product pages.
+ * Version:           0.1.0
+ * Author:            Vagish Vela
+ * Author URI:        http://vagish.com
+ * Text Domain:       woocommerce-product-faq-tab-en-GB
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Domain Path:       /languages
+ * GitHub Plugin URI: https://github.com/VagishVela/woocommerce-product-faq-tab
  */
 
 //* Add FAQ Tab Filter
