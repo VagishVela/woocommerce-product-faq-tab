@@ -31,5 +31,6 @@ function wooc_product_faq_content() {
     }
 	else  { echo ''; }
 }
-
+// Include the FAQ Shortcode
+include( plugin_dir_path( __FILE__ ) . 'faq-shortcode.php');
 ?>
