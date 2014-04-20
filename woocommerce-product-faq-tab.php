@@ -1,10 +1,5 @@
 <?php
 /**
- * The WordPress Plugin Boilerplate.
- *
- * A foundation off of which to build well-documented WordPress plugins that
- * also follow WordPress Coding Standards and PHP best practices.
- *
  * @package   WooCommerce_Product_FAQ_Tab
  * @author    Vagish Vela <web@vagish.com>
  * @license   GPL-2.0+
