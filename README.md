@@ -17,5 +17,6 @@ The ```[wc-faq]``` shortcode can be used anywhere on the website.
 ##0.1.0
 * Initial release.
 * Basic FAQ and custom field function
+
 ##0.1.1
 * Minor update which makes sure the shortcodes are parsed within the custom field linebreaks are automatically created.
