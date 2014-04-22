@@ -37,7 +37,7 @@ function wooc_product_faq_content() {
 	if ( is_array($product_faq_tab_1_values) ) {
 		foreach ( $product_faq_tab_1_values as $product_faq_tab_1_key => $product_faq_tab_1_value ) {
 			echo '<h2>FAQ</h2>'; // Change to FAQs if you wish.
-			echo $product_faq_tab_1_value; 	   
+			echo wpautop(do_shortcode($product_faq_tab_1_value)); // Automatically creates linebreaks, paragraphs and executes shortcodes
 		}
     }
 	else  { echo ''; }
