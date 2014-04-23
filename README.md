@@ -22,3 +22,7 @@ You can configure settings in the woocommerce-product-faq-tab.php file.
 
 ##0.1.1
 * Minor update which makes sure the shortcodes are parsed within the custom field linebreaks are automatically created.
+
+##0.2.0-beta
+* Can now change the name of the FAQ tab.
+* Can enable or disable the FAQ shortcode.
