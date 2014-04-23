@@ -1,7 +1,8 @@
 Woocommerce Product FAQ Tab
 ===========================
 
-Makes an FAQ tab on Woocommerce Product pages.
+#Features
+Creates an extra tab at the end of the tabs WooCommerce Product page for the FAQ section. Also includes a shortcode for a show/hide function for the FAQ answers.
 
 #Usage
 1. Install plugin by downloading latest tag zip, and then uploading to wordpress.
