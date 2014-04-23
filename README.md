@@ -12,6 +12,8 @@ Go to the edit page for a WooCommerce product. Add this ```wooc_product_faq``` t
 Where q="Question" and a="Answer".
 
 The ```[wc-faq]``` shortcode can be used anywhere on the website.
+##Configure
+You can configure settings in the woocommerce-product-faq-tab.php file.
 
 #Changelog
 ##0.1.0
