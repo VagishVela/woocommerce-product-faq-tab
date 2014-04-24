@@ -22,14 +22,14 @@
 
 // Configuration
 $wooc_product_faq_name = 'FAQ'; // Set the tab name for the FAQs
-$wooc_product_faq_shortcode_enabled = '1' // Set to 1 to enable, set to 0 to disable
+$wooc_product_faq_shortcode_enabled = 1 ;// Set to 1 to enable, set to 0 to disable
 
 //* Add FAQ Tab Filter
 add_filter( 'woocommerce_product_tabs', 'wooc_product_faq' );
 function wooc_product_faq( $tabs ) {
 	// Adds the new tab
 	$tabs['FAQ'] = array(
-		'title' => __( $wooc_product_faq_name, 'woocommerce' ),
+		'title' => __( $wooc_product_faq_name , 'woocommerce' ),
 		'priority' => 99, // Priority effects the order, 99 puts it at the end of the tabs
 		'callback' => 'wooc_product_faq_content'
 	);
@@ -40,16 +40,21 @@ function wooc_product_faq_content() {
 	$product_faq_tab_1_values = get_post_custom_values('wooc_product_faq');
 	if ( is_array($product_faq_tab_1_values) ) {
 		foreach ( $product_faq_tab_1_values as $product_faq_tab_1_key => $product_faq_tab_1_value ) {
-			echo '<h2>'$wooc_product_faq_name'</h2>'; // Change to FAQs if you wish.
+			echo '<h2>' . $wooc_product_faq_name . '</h2>'; // Change to FAQs if you wish.
 			echo wpautop(do_shortcode($product_faq_tab_1_value)); // Automatically creates linebreaks, paragraphs and executes shortcodes
 		}
+    }	else  {
+		return;
     }
-	else  { echo ''; }
 }
+
 // Include the FAQ Shortcode
-if ($wooc_product_faq_shortcode_enabled = '1') {
+if ($wooc_product_faq_shortcode_enabled == 1) {
 	include( plugin_dir_path( __FILE__ ) . 'includes/faq-shortcode.php');
 } else {
 	return;
 }
+
+// Include Admin Menu
+include( plugin_dir_path( __FILE__ ) . 'admin/admin-menu.php');
 ?>
